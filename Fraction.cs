@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Reflection.PortableExecutable;
-using System.Text;
+﻿using System.Numerics;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace CalculatorLibrary
 {
-	internal struct Fraction
+    internal struct Fraction
 	{
 		public BigInteger Numerator, Denominator;
 

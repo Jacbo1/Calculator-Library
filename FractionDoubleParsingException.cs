@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculatorLibrary
+﻿namespace CalculatorLibrary
 {
-	internal class FractionDoubleParsingException : Exception
+    internal class FractionDoubleParsingException : Exception
 	{
 		public FractionDoubleParsingException() : base("Number too small or large for Fraction.") { }
 

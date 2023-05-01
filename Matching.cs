@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace CalculatorLibrary
 {
-	internal static class Matching
+    internal static class Matching
 	{
 		private const string UNSIGNED_NUMBER = @"(\d*\.)?\d+";
 		private const string NUMBER = "[+-]?" + UNSIGNED_NUMBER;

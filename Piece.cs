@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace CalculatorLibrary
 {
-	internal struct Piece
+    internal struct Piece
 	{
 		public string Type;
 		public object Value;
@@ -157,11 +151,6 @@ namespace CalculatorLibrary
 					IsOperand = false;
 					break;
 			}
-		}
-
-		public Piece(Fraction? constValue) : this()
-		{
-			ConstValue = constValue;
 		}
 	}
 }

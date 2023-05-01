@@ -772,9 +772,9 @@ namespace CalculatorLibrary
 						Piece num1 = stack.Pop();
 
 						if (num1.Type == "const")
-							num1 = new Piece(num1.ConstValue);
+							num1 = new Piece((Fraction)num1.ConstValue);
 						if (num2.Type == "const")
-							num2 = new Piece(num2.ConstValue);
+							num2 = new Piece((Fraction)num2.ConstValue);
 
 						bool isNum1 = num1.Type == "num";
 						bool isNum2 = num2.Type == "num";
@@ -927,7 +927,7 @@ namespace CalculatorLibrary
 
 						Piece num = stack.Pop();
 						if (num.Type == "const")
-							num = new Piece(num.ConstValue);
+							num = new Piece((Fraction)num.ConstValue);
 
 						bool isNum = num.Type == "num";
 

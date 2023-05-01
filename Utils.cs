@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculatorLibrary
+﻿namespace CalculatorLibrary
 {
-	internal static class Utils
+    internal static class Utils
 	{
 		public static Fraction Op(Fraction a, Fraction b, Func<Fraction, Fraction, Fraction> func) => func(a, b);
 		public static Fraction Op(Fraction a, Func<Fraction, Fraction> func) => func(a);

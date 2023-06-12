@@ -25,7 +25,7 @@
 			{
 				case "numnum": return new Piece(Op((Fraction)a.Value, (Fraction)b.Value, func));
 				case "numvec": return new Piece(Op((Fraction)a.Value, (Vector)b.Value, func));
-				case "vecnum": return new Piece(Op((Fraction)a.Value, (Vector)b.Value, func));
+				case "vecnum": return new Piece(Op((Vector)a.Value, (Fraction)b.Value, func));
 				case "vecvec": return new Piece(Op((Vector)a.Value, (Vector)b.Value, func));
 				default: throw new Exception();
 			}

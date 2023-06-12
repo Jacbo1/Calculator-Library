@@ -371,8 +371,14 @@ namespace CalculatorLibrary
 
 		public override string ToString() => ToString(DEFAULT_DECIMAL_COUNT);
 
-		// Trig
-		public static Fraction Sin(Fraction frac) => Math.Sin((double)(frac % 360) * DEG2RAD);
+        public string ToMinString()
+        {
+            if (Denominator == 1) return Numerator.ToString();
+            return $"{Numerator} / {Denominator}";
+        }
+
+        // Trig
+        public static Fraction Sin(Fraction frac) => Math.Sin((double)(frac % 360) * DEG2RAD);
 
 		public static Fraction Cos(Fraction frac) => Math.Cos((double)(frac % 360) * DEG2RAD);
 
